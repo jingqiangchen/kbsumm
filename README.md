@@ -1,6 +1,7 @@
 The code is for the submitted paper titled "An entity-guided framework for summarization with relational heterogeneous graph neural network".  
 Some code are borrowed from PG. Thanks for their work.
 # Dependancy
+JDK for run the entity linking code  
 Python2.7 for running the model  
 Python3.5 for preprocessing the data  
 rdf2vec  
