@@ -9,7 +9,7 @@ import tensorflow as tf
 import data
 import copy
 
-from batcher import Batch as GenBatch
+from batcher_generator import Batch as GenBatch
 
 np_float64=np.float32
 MIN_INV = 1e-10
@@ -634,7 +634,6 @@ class Batcher(object):
       else:
         yield (data_name, text, summary, summary2, sent_relas, entities2sents, entities2entities, summary_label, entities, 
                entity_labels, entities2mentions)
-
 
 
 
