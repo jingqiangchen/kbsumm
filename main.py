@@ -38,7 +38,7 @@ def train(mode="TEO", coverage="False", batch_size=10, gpu=1, corpus="dailymail"
     os.system('''
         export CUDA_VISIBLE_DEVICES=%d
             
-        python -m run_summarization \
+        python -m run_generator \
               --data_path="%s" \
               --exp_name=%s \
               --batch_size=%d \
@@ -122,7 +122,7 @@ def beam_search(mode="TEO", beam_size=5, gpu=1, corpus="dailymail", is_batch=Tru
         os.system('''
                 export CUDA_VISIBLE_DEVICES=%d
                 
-                python -m run_summarization \
+                python -m run_generator \
                       --mode=decode \
                       --single_pass=True \
                       --data_path="%s" \
@@ -184,7 +184,7 @@ def eval(mode="TEO", beam_size=5, gpu=1, corpus="dailymail", en_vocab_size=4):
     os.system('''
                 export CUDA_VISIBLE_DEVICES=%d
                 
-                python -m run_summarization \
+                python -m run_generator \
                       --mode=eval \
                       --data_path="%s" \
                       --exp_name=%s \
