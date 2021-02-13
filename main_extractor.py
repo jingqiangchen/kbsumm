@@ -56,7 +56,7 @@ def train(mode="W.O.RL", gcn_level=2, rl_lambda=0.3, batch_size=10, gpu=1, corpu
     os.system('''
         export CUDA_VISIBLE_DEVICES=%d
             
-        python -m run_gcn \
+        python -m run_extractor \
               --data_path="%s" \
               --exp_name=%s \
               --gcn_level=%d \
@@ -159,7 +159,7 @@ def ext_greedy(ext_mode="W.O.RL", gcn_level=2, rl_lambda=0.3, batch_size=10, gpu
         os.system('''
             export CUDA_VISIBLE_DEVICES=%d
                 
-            python -m run_gcn \
+            python -m run_extractor \
                   --data_path="%s" \
                   --mode=ext_greedy \
                   --exp_name=%s \
@@ -267,7 +267,7 @@ def ext_gen_decode(ext_mode="W.O.RL", gcn_level=2, rl_lambda=0.3, batch_size=10,
         os.system('''
             export CUDA_VISIBLE_DEVICES=%d
                 
-            python -m run_gcn \
+            python -m run_extractor \
                   --data_path="%s" \
                   --mode=decode \
                   --exp_name=%s \
@@ -316,7 +316,7 @@ def test(mode="W.O.RL", batch_size=10, gpu=1, corpus="dailymail"):
     os.system('''
         export CUDA_VISIBLE_DEVICES=%d
             
-        python -m run_gcn \
+        python -m run_extractor \
               --data_path="%s" \
               --exp_name=%s \
               --batch_size=%d \
