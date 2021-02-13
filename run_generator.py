@@ -8,9 +8,9 @@ import tensorflow as tf
 import numpy as np
 from collections import namedtuple
 from data import Vocab
-from batcher import Batcher
+from batcher_generator import Batcher
 from model import SummarizationModel
-from decode import BeamSearchDecoder, BeamSearchDecoder_RL, GreedyDecoder 
+from decode_generator import BeamSearchDecoder, BeamSearchDecoder_RL, GreedyDecoder 
 import util
 from tensorflow.python import debug as tf_debug
 import common
@@ -407,14 +407,4 @@ def main(unused_argv):
 
 if __name__ == '__main__':
   tf.app.run()
-
-
-
-
-
-
-
-
-
-
 
