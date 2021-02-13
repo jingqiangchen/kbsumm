@@ -1,6 +1,6 @@
 Some code are borrowed from PG and Transformer. Thanks for their work.
 # Dependancy
-Python2.7 for running the model
+Python2.7 for running the model \n
 Python3.5 for preprocessing the data
 pyrouge 0.1.3
 # Dataset 
