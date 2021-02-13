@@ -8,10 +8,10 @@ import tensorflow as tf
 import numpy as np
 from collections import namedtuple
 from data import Vocab
-from batcher_gcn import Batcher
-from model_gcn import SummarizationModel_GCN
-from model import SummarizationModel
-from decode3 import BeamSearchDecoder_RL, ExtGreedyDecoder, GreedyDecoder_RL, GreedyDecoder_RL_2, ExtGenDecoder
+from batcher_extractor import Batcher
+from model_extractor import SummarizationModel_GCN
+from model_generator import SummarizationModel
+from decode_extractor import BeamSearchDecoder_RL, ExtGreedyDecoder, GreedyDecoder_RL, GreedyDecoder_RL_2, ExtGenDecoder
 import util
 from tensorflow.python import debug as tf_debug
 import common
@@ -771,12 +771,6 @@ def main(unused_argv):
 
 if __name__ == '__main__':
   tf.app.run()
-
-
-
-
-
-
 
 
 
