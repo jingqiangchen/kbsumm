@@ -1,4 +1,4 @@
-The code is for the submitted paper titled "An entity-guided framework for summarization with relational heterogeneous graph neural network".  
+The code is for the submitted paper titled "An entity-guided text summarization framework with relational heterogeneous graph neural network".  
 Some code are borrowed from PG. Thanks for their work.
 # Dependancy
 JDK for run the entity linking code  
